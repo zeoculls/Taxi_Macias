@@ -18,6 +18,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
+
+        // Traducir placeholders del formulario
+        document.getElementById('nombre').placeholder = translations[language].name.replace(':', '');
+        document.getElementById('telefono').placeholder = translations[language].phone.replace(':', '');
+        document.getElementById('origen').placeholder = translations[language].origin.replace(':', '');
+        document.getElementById('destino').placeholder = translations[language].destination.replace(':', '');
+
+        // Traducir sección de servicios
+        document.querySelector('.services h3').textContent = translations[language].services_title;
+        const serviceItems = document.querySelectorAll('.service-item');
+        serviceItems[0].querySelector('h4').textContent = translations[language].airport_transfer;
+        serviceItems[0].querySelector('p').textContent = translations[language].airport_transfer_desc;
+        serviceItems[1].querySelector('h4').textContent = translations[language].business;
+        serviceItems[1].querySelector('p').textContent = translations[language].business_desc;
+        serviceItems[2].querySelector('h4').textContent = translations[language].tourism;
+        serviceItems[2].querySelector('p').textContent = translations[language].tourism_desc;
+        serviceItems[3].querySelector('h4').textContent = translations[language].service_24_7;
+        serviceItems[3].querySelector('p').textContent = translations[language].service_24_7_desc;
+
         currentLanguage = language;
     }
 
@@ -53,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const mensajeCodificado = encodeURIComponent(mensaje);
         
-        // Número de WhatsApp del servicio de taxi (reemplazar con el número real)
-        const numeroWhatsApp = '34XXXXXXXXX'; // Reemplazar con el número real
+        // Número de WhatsApp del servicio de taxi
+        const numeroWhatsApp = '+34634634774'; // Incluimos el + para el prefijo internacional
         
         const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
         
@@ -63,4 +82,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Inicializar la página en español
     translatePage('es');
+
+    // Animación suave al hacer scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 }); 

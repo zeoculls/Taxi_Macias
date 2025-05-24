@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="translate" data-key="title">Servicio de Taxi - Tu Transporte de Confianza</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1 class="translate" data-key="header">TaxiService</h1>
+                <h1 class="translate" data-key="header">Taxi Maria Macias</h1>
             </div>
             <div class="language-selector">
                 <select id="languageSelect">
@@ -26,62 +27,135 @@
 
     <main>
         <section class="hero">
-            <h2 class="translate" data-key="hero_title">Tu Taxi de Confianza</h2>
-            <p class="translate" data-key="hero_subtitle">Servicio profesional, puntual y seguro las 24 horas</p>
+            <div class="hero-content">
+                <h2 class="translate" data-key="hero_title">Tu Taxi de Confianza</h2>
+                <p class="translate" data-key="hero_subtitle">Servicio profesional, puntual y seguro las 24 horas</p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Seguro</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Profesional</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="contact-form">
-            <h3 class="translate" data-key="form_title">Solicita tu servicio</h3>
-            <form id="taxiForm">
-                <div class="form-group">
-                    <label for="nombre" class="translate" data-key="name">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="telefono" class="translate" data-key="phone">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-                </div>
+            <div class="form-container">
+                <h3 class="translate" data-key="form_title">Solicita tu servicio</h3>
+                <form id="taxiForm">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="origen" class="translate" data-key="origin">Dirección de origen:</label>
-                    <input type="text" id="origen" name="origen" required>
-                </div>
+                    <div class="form-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="origen" name="origen" placeholder="Dirección de origen" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="destino" class="translate" data-key="destination">Dirección de destino:</label>
-                    <input type="text" id="destino" name="destino" required>
-                </div>
+                    <div class="form-group">
+                        <i class="fas fa-map-marker"></i>
+                        <input type="text" id="destino" name="destino" placeholder="Dirección de destino" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="fecha" class="translate" data-key="date">Fecha y hora:</label>
-                    <input type="datetime-local" id="fecha" name="fecha" required>
-                </div>
+                    <div class="form-group">
+                        <i class="fas fa-calendar"></i>
+                        <input type="datetime-local" id="fecha" name="fecha" required>
+                    </div>
 
-                <button type="submit" class="whatsapp-button translate" data-key="whatsapp_button">
-                    Contactar por WhatsApp
-                </button>
-            </form>
+                    <button type="submit" class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="translate" data-key="whatsapp_button">Contactar por WhatsApp</span>
+                    </button>
+                </form>
+            </div>
         </section>
 
         <section class="features">
             <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
                 <h4 class="translate" data-key="feature_24_7">24/7</h4>
                 <p class="translate" data-key="feature_24_7_desc">Disponible todo el día</p>
             </div>
             <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
                 <h4 class="translate" data-key="feature_safe">Seguro</h4>
                 <p class="translate" data-key="feature_safe_desc">Conductores profesionales</p>
             </div>
             <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-star"></i>
+                </div>
                 <h4 class="translate" data-key="feature_punctual">Puntual</h4>
                 <p class="translate" data-key="feature_punctual_desc">Llegamos a tiempo</p>
+            </div>
+        </section>
+
+        <section class="services">
+            <h3>Nuestros Servicios</h3>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-plane"></i>
+                    <h4>Traslados al Aeropuerto</h4>
+                    <p>Servicio puntual y confiable para tus viajes</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-suitcase"></i>
+                    <h4>Viajes de Negocios</h4>
+                    <p>Transporte ejecutivo para profesionales</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-map"></i>
+                    <h4>Turismo</h4>
+                    <p>Conoce la ciudad con choferes expertos</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>Servicio 24/7</h4>
+                    <p>Disponibles cuando nos necesites</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 TaxiService. <span class="translate" data-key="footer">Todos los derechos reservados.</span></p>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Taxi Maria Macias</h3>
+                <p>Tu servicio de taxi de confianza</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-phone"></i> +34 634 63 47 74</p>
+                <p><i class="fas fa-envelope"></i> info@taxiservice.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Taxi Maria Macias. <span class="translate" data-key="footer">Todos los derechos reservados.</span></p>
+        </div>
     </footer>
 
     <script src="translations.js"></script>

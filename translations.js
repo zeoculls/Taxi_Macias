@@ -1,7 +1,7 @@
 const translations = {
     es: {
-        title: "Servicio de Taxi - Tu Transporte de Confianza",
-        header: "TaxiService",
+        title: "Taxi Maria Macias - Tu Transporte de Confianza",
+        header: "Taxi Maria Macias",
         hero_title: "Tu Taxi de Confianza",
         hero_subtitle: "Servicio profesional, puntual y seguro las 24 horas",
         form_title: "Solicita tu servicio",
@@ -18,11 +18,20 @@ const translations = {
         feature_punctual: "Puntual",
         feature_punctual_desc: "Llegamos a tiempo",
         footer: "Todos los derechos reservados.",
-        whatsapp_msg: "¡Hola! Me gustaría solicitar un taxi:"
+        whatsapp_msg: "¡Hola! Me gustaría solicitar un taxi:",
+        services_title: "Nuestros Servicios",
+        airport_transfer: "Traslados al Aeropuerto",
+        airport_transfer_desc: "Servicio puntual y confiable para tus viajes",
+        business: "Viajes de Negocios",
+        business_desc: "Transporte ejecutivo para profesionales",
+        tourism: "Turismo",
+        tourism_desc: "Conoce la ciudad con choferes expertos",
+        service_24_7: "Servicio 24/7",
+        service_24_7_desc: "Disponibles cuando nos necesites"
     },
     en: {
-        title: "Taxi Service - Your Trusted Transportation",
-        header: "TaxiService",
+        title: "Taxi Maria Macias - Your Trusted Transportation",
+        header: "Taxi Maria Macias",
         hero_title: "Your Trusted Taxi",
         hero_subtitle: "Professional, punctual and safe service 24 hours",
         form_title: "Request your service",
@@ -39,11 +48,20 @@ const translations = {
         feature_punctual: "Punctual",
         feature_punctual_desc: "Always on time",
         footer: "All rights reserved.",
-        whatsapp_msg: "Hello! I would like to request a taxi:"
+        whatsapp_msg: "Hello! I would like to request a taxi:",
+        services_title: "Our Services",
+        airport_transfer: "Airport Transfers",
+        airport_transfer_desc: "Punctual and reliable service for your travels",
+        business: "Business Travel",
+        business_desc: "Executive transport for professionals",
+        tourism: "Tourism",
+        tourism_desc: "Explore the city with expert drivers",
+        service_24_7: "24/7 Service",
+        service_24_7_desc: "Available when you need us"
     },
     pt: {
-        title: "Serviço de Táxi - Seu Transporte de Confiança",
-        header: "TaxiService",
+        title: "Taxi Maria Macias - Seu Transporte de Confiança",
+        header: "Taxi Maria Macias",
         hero_title: "Seu Táxi de Confiança",
         hero_subtitle: "Serviço profissional, pontual e seguro 24 horas",
         form_title: "Solicite seu serviço",
@@ -60,11 +78,20 @@ const translations = {
         feature_punctual: "Pontual",
         feature_punctual_desc: "Sempre no horário",
         footer: "Todos os direitos reservados.",
-        whatsapp_msg: "Olá! Gostaria de solicitar um táxi:"
+        whatsapp_msg: "Olá! Gostaria de solicitar um táxi:",
+        services_title: "Nossos Serviços",
+        airport_transfer: "Transfers para Aeroporto",
+        airport_transfer_desc: "Serviço pontual e confiável para suas viagens",
+        business: "Viagens de Negócios",
+        business_desc: "Transporte executivo para profissionais",
+        tourism: "Turismo",
+        tourism_desc: "Conheça a cidade com motoristas especialistas",
+        service_24_7: "Serviço 24/7",
+        service_24_7_desc: "Disponível quando você precisar"
     },
     fr: {
-        title: "Service de Taxi - Votre Transport de Confiance",
-        header: "TaxiService",
+        title: "Taxi Maria Macias - Votre Transport de Confiance",
+        header: "Taxi Maria Macias",
         hero_title: "Votre Taxi de Confiance",
         hero_subtitle: "Service professionnel, ponctuel et sûr 24h/24",
         form_title: "Demandez votre service",
@@ -81,6 +108,15 @@ const translations = {
         feature_punctual: "Ponctuel",
         feature_punctual_desc: "Toujours à l'heure",
         footer: "Tous droits réservés.",
-        whatsapp_msg: "Bonjour! Je voudrais réserver un taxi:"
+        whatsapp_msg: "Bonjour! Je voudrais réserver un taxi:",
+        services_title: "Nos Services",
+        airport_transfer: "Transferts Aéroport",
+        airport_transfer_desc: "Service ponctuel et fiable pour vos voyages",
+        business: "Voyages d'Affaires",
+        business_desc: "Transport exécutif pour professionnels",
+        tourism: "Tourisme",
+        tourism_desc: "Découvrez la ville avec des chauffeurs experts",
+        service_24_7: "Service 24/7",
+        service_24_7_desc: "Disponible quand vous en avez besoin"
     }
 }; 
