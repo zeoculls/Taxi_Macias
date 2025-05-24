@@ -1,6 +1,6 @@
 const translations = {
     es: {
-        title: "Taxi Maria Macias - Tu Transporte de Confianza",
+        title: "Taxi María Macías - Servicio de Taxi en Galicia | Traslados y Rutas 24/7",
         header: "Taxi Maria Macias",
         hero_title: "Tu Taxi de Confianza",
         hero_subtitle: "Bienvenido al Taxi de Maria Macías, tu servicio de taxi en Galicia",
@@ -64,7 +64,7 @@ const translations = {
         payment_desc: "Ofrezco la comodidad de pagar tu viaje con tarjeta de crédito o débito, así como con Bizum, para que no tengas que preocuparte por llevar efectivo."
     },
     en: {
-        title: "Taxi Maria Macias - Your Trusted Transportation",
+        title: "Taxi María Macías - Taxi Service in Galicia | 24/7 Transfers and Routes",
         header: "Taxi Maria Macias",
         hero_title: "Your Trusted Taxi",
         hero_subtitle: "Welcome to Maria Macías Taxi, your taxi service in Galicia",
@@ -128,7 +128,7 @@ const translations = {
         payment_desc: "I offer the convenience of paying for your trip with credit or debit card, as well as Bizum, so you don't have to worry about carrying cash."
     },
     pt: {
-        title: "Taxi Maria Macias - Seu Transporte de Confiança",
+        title: "Taxi María Macías - Serviço de Táxi na Galiza | Transferências e Rotas 24/7",
         header: "Taxi Maria Macias",
         hero_title: "Seu Táxi de Confiança",
         hero_subtitle: "Bem-vindo ao Taxi de Maria Macías, seu serviço de táxi na Galiza",
@@ -192,7 +192,7 @@ const translations = {
         payment_desc: "Ofereço a comodidade de pagar sua viagem com cartão de crédito ou débito, bem como Bizum, para que você não precise se preocupar em carregar dinheiro."
     },
     fr: {
-        title: "Taxi Maria Macias - Votre Transport de Confiance",
+        title: "Taxi María Macías - Service de Taxi en Galice | Transferts et Routes 24/7",
         header: "Taxi Maria Macias",
         hero_title: "Votre Taxi de Confiance",
         hero_subtitle: "Bienvenue chez Taxi Maria Macías, votre service de taxi en Galice",
