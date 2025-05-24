@@ -61,7 +61,12 @@ const translations = {
         pets_title: "Se Aceptan Mascotas",
         pets_desc: "Tu compañero peludo es bienvenido a bordo, asegurando que puedas viajar con tu mascota sin preocupaciones.",
         payment_title: "Pago con Tarjeta y Bizum",
-        payment_desc: "Ofrezco la comodidad de pagar tu viaje con tarjeta de crédito o débito, así como con Bizum, para que no tengas que preocuparte por llevar efectivo."
+        payment_desc: "Ofrezco la comodidad de pagar tu viaje con tarjeta de crédito o débito, así como con Bizum, para que no tengas que preocuparte por llevar efectivo.",
+        hospital_section_title: "Acompañamiento a Hospitales",
+        hospital_service_desc_1: "Asistencia a citas médicas y revisiones",
+        hospital_service_desc_2: "Servicio especial para personas mayores",
+        hospital_service_desc_3: "Espera durante la consulta médica",
+        hospital_service_desc_4: "Traslado puerta a puerta con máxima atención"
     },
     en: {
         title: "Taxi María Macías - Taxi Service in Galicia | 24/7 Transfers and Routes",
@@ -125,7 +130,12 @@ const translations = {
         pets_title: "Pets Welcome",
         pets_desc: "Your furry companion is welcome on board, ensuring you can travel with your pet worry-free.",
         payment_title: "Card and Bizum Payment",
-        payment_desc: "I offer the convenience of paying for your trip with credit or debit card, as well as Bizum, so you don't have to worry about carrying cash."
+        payment_desc: "I offer the convenience of paying for your trip with credit or debit card, as well as Bizum, so you don't have to worry about carrying cash.",
+        hospital_section_title: "Hospital Accompaniment",
+        hospital_service_desc_1: "Assistance for medical appointments and check-ups",
+        hospital_service_desc_2: "Special service for elderly people",
+        hospital_service_desc_3: "Waiting service during medical consultation",
+        hospital_service_desc_4: "Door-to-door transfer with maximum attention"
     },
     pt: {
         title: "Taxi María Macías - Serviço de Táxi na Galiza | Transferências e Rotas 24/7",
@@ -189,7 +199,12 @@ const translations = {
         pets_title: "Aceita Animais de Estimação",
         pets_desc: "Seu companheiro peludo é bem-vindo a bordo, garantindo que você possa viajar com seu animal de estimação sem preocupações.",
         payment_title: "Pagamento com Cartão e Bizum",
-        payment_desc: "Ofereço a comodidade de pagar sua viagem com cartão de crédito ou débito, bem como Bizum, para que você não precise se preocupar em carregar dinheiro."
+        payment_desc: "Ofereço a comodidade de pagar sua viagem com cartão de crédito ou débito, bem como Bizum, para que você não precise se preocupar em carregar dinheiro.",
+        hospital_section_title: "Acompanhamento Hospitalar",
+        hospital_service_desc_1: "Assistência para consultas médicas e check-ups",
+        hospital_service_desc_2: "Serviço especial para idosos",
+        hospital_service_desc_3: "Serviço de espera durante a consulta médica",
+        hospital_service_desc_4: "Transferência porta a porta com máxima atenção"
     },
     fr: {
         title: "Taxi María Macías - Service de Taxi en Galice | Transferts et Routes 24/7",
@@ -253,6 +268,11 @@ const translations = {
         pets_title: "Animaux Acceptés",
         pets_desc: "Votre compagnon à quatre pattes est le bienvenu à bord, vous permettant de voyager avec votre animal sans soucis.",
         payment_title: "Paiement par Carte et Bizum",
-        payment_desc: "J'offre la possibilité de payer votre trajet par carte de crédit ou débit, ainsi que par Bizum, pour que vous n'ayez pas à vous soucier d'avoir de l'argent liquide."
+        payment_desc: "J'offre la possibilité de payer votre trajet par carte de crédit ou débit, ainsi que par Bizum, pour que vous n'ayez pas à vous soucier d'avoir de l'argent liquide.",
+        hospital_section_title: "Accompagnement à l'Hôpital",
+        hospital_service_desc_1: "Assistance aux rendez-vous médicaux et contrôles",
+        hospital_service_desc_2: "Service spécial pour les personnes âgées",
+        hospital_service_desc_3: "Service d'attente pendant la consultation médicale",
+        hospital_service_desc_4: "Transfert porte-à-porte avec attention maximale"
     }
 }; 
