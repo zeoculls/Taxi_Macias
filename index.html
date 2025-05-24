@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="translate" data-key="title">Servicio de Taxi - Tu Transporte de Confianza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="translate" data-key="header">TaxiService</h1>
+            </div>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="pt">Português</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2 class="translate" data-key="hero_title">Tu Taxi de Confianza</h2>
+            <p class="translate" data-key="hero_subtitle">Servicio profesional, puntual y seguro las 24 horas</p>
+        </section>
+
+        <section class="contact-form">
+            <h3 class="translate" data-key="form_title">Solicita tu servicio</h3>
+            <form id="taxiForm">
+                <div class="form-group">
+                    <label for="nombre" class="translate" data-key="name">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono" class="translate" data-key="phone">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="origen" class="translate" data-key="origin">Dirección de origen:</label>
+                    <input type="text" id="origen" name="origen" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destino" class="translate" data-key="destination">Dirección de destino:</label>
+                    <input type="text" id="destino" name="destino" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha" class="translate" data-key="date">Fecha y hora:</label>
+                    <input type="datetime-local" id="fecha" name="fecha" required>
+                </div>
+
+                <button type="submit" class="whatsapp-button translate" data-key="whatsapp_button">
+                    Contactar por WhatsApp
+                </button>
+            </form>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h4 class="translate" data-key="feature_24_7">24/7</h4>
+                <p class="translate" data-key="feature_24_7_desc">Disponible todo el día</p>
+            </div>
+            <div class="feature">
+                <h4 class="translate" data-key="feature_safe">Seguro</h4>
+                <p class="translate" data-key="feature_safe_desc">Conductores profesionales</p>
+            </div>
+            <div class="feature">
+                <h4 class="translate" data-key="feature_punctual">Puntual</h4>
+                <p class="translate" data-key="feature_punctual_desc">Llegamos a tiempo</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TaxiService. <span class="translate" data-key="footer">Todos los derechos reservados.</span></p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
