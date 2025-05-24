@@ -66,7 +66,12 @@ const translations = {
         hospital_service_desc_1: "Asistencia a citas médicas y revisiones",
         hospital_service_desc_2: "Servicio especial para personas mayores",
         hospital_service_desc_3: "Espera durante la consulta médica",
-        hospital_service_desc_4: "Traslado puerta a puerta con máxima atención"
+        hospital_service_desc_4: "Traslado puerta a puerta con máxima atención",
+        service_areas_title: "Zonas de Servicio",
+        service_areas_desc: "Servicios de Taxi con posibilidad de desplazamiento en la zona de:",
+        discover_region_title: "Descubre Nuestra Región",
+        discover_region_desc: "Ven a conocer las zonas turísticas:",
+        waiting_message: "¡Te estaremos esperando!"
     },
     en: {
         title: "Taxi María Macías - Taxi Service in Galicia | 24/7 Transfers and Routes",
@@ -135,7 +140,12 @@ const translations = {
         hospital_service_desc_1: "Assistance for medical appointments and check-ups",
         hospital_service_desc_2: "Special service for elderly people",
         hospital_service_desc_3: "Waiting service during medical consultation",
-        hospital_service_desc_4: "Door-to-door transfer with maximum attention"
+        hospital_service_desc_4: "Door-to-door transfer with maximum attention",
+        service_areas_title: "Service Areas",
+        service_areas_desc: "Taxi services available in the area of:",
+        discover_region_title: "Discover Our Region",
+        discover_region_desc: "Come and visit our tourist areas:",
+        waiting_message: "We'll be waiting for you!"
     },
     pt: {
         title: "Taxi María Macías - Serviço de Táxi na Galiza | Transferências e Rotas 24/7",
@@ -204,7 +214,12 @@ const translations = {
         hospital_service_desc_1: "Assistência para consultas médicas e check-ups",
         hospital_service_desc_2: "Serviço especial para idosos",
         hospital_service_desc_3: "Serviço de espera durante a consulta médica",
-        hospital_service_desc_4: "Transferência porta a porta com máxima atenção"
+        hospital_service_desc_4: "Transferência porta a porta com máxima atenção",
+        service_areas_title: "Áreas de Serviço",
+        service_areas_desc: "Serviços de Táxi disponíveis na área de:",
+        discover_region_title: "Descubra Nossa Região",
+        discover_region_desc: "Venha conhecer as áreas turísticas:",
+        waiting_message: "Estaremos esperando por você!"
     },
     fr: {
         title: "Taxi María Macías - Service de Taxi en Galice | Transferts et Routes 24/7",
@@ -273,6 +288,11 @@ const translations = {
         hospital_service_desc_1: "Assistance aux rendez-vous médicaux et contrôles",
         hospital_service_desc_2: "Service spécial pour les personnes âgées",
         hospital_service_desc_3: "Service d'attente pendant la consultation médicale",
-        hospital_service_desc_4: "Transfert porte-à-porte avec attention maximale"
+        hospital_service_desc_4: "Transfert porte-à-porte avec attention maximale",
+        service_areas_title: "Zones de Service",
+        service_areas_desc: "Services de Taxi disponibles dans la région de:",
+        discover_region_title: "Découvrez Notre Région",
+        discover_region_desc: "Venez découvrir nos zones touristiques:",
+        waiting_message: "Nous vous attendons!"
     }
 }; 

@@ -255,8 +255,12 @@ input:focus {
 }
 
 .services {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('Ribadavia-Turismo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 4rem 2rem;
-    background-color: #fff;
+    position: relative;
 }
 
 .services h3 {
@@ -264,6 +268,8 @@ input:focus {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: #1a1a1a;
+    position: relative;
+    z-index: 2;
 }
 
 .services-grid {
@@ -272,6 +278,8 @@ input:focus {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .service-item {
@@ -280,6 +288,8 @@ input:focus {
     border: 2px solid #fbe609;
     border-radius: 10px;
     transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
 }
 
 .service-item:hover {
@@ -632,5 +642,102 @@ footer {
         font-size: 1rem;
         padding: 0 15px;
         margin: 1rem auto;
+    }
+}
+
+.service-areas {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('Ribadavia-Turismo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 60px 0;
+    margin-top: 40px;
+    position: relative;
+}
+
+.service-areas .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.service-areas-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.service-locations, .tourist-attractions {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.service-areas h3 {
+    color: #1a1a1a;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-areas p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.locations-list, .attractions-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.locations-list li, .attractions-list li {
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.locations-list li:hover, .attractions-list li:hover {
+    background-color: #fbe609;
+    transform: translateY(-2px);
+}
+
+.welcome-message {
+    text-align: center;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .service-areas-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-areas {
+        padding: 40px 0;
+    }
+
+    .service-areas h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-areas p {
+        font-size: 1rem;
+    }
+
+    .locations-list, .attractions-list {
+        justify-content: center;
     }
 } 
