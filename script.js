@@ -20,22 +20,48 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Traducir placeholders del formulario
-        document.getElementById('nombre').placeholder = translations[language].name.replace(':', '');
-        document.getElementById('telefono').placeholder = translations[language].phone.replace(':', '');
-        document.getElementById('origen').placeholder = translations[language].origin.replace(':', '');
-        document.getElementById('destino').placeholder = translations[language].destination.replace(':', '');
+        const formElements = {
+            'nombre': 'name',
+            'telefono': 'phone',
+            'origen': 'origin',
+            'destino': 'destination'
+        };
+
+        for (const [id, key] of Object.entries(formElements)) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.placeholder = translations[language][key].replace(':', '');
+            }
+        }
 
         // Traducir sección de servicios
-        document.querySelector('.services h3').textContent = translations[language].services_title;
+        const servicesTitle = document.querySelector('.services h3');
+        if (servicesTitle) {
+            servicesTitle.textContent = translations[language].services_title;
+        }
+
+        const serviceTranslations = [
+            ['airport_transfer', 'airport_transfer_desc'],
+            ['business', 'business_desc'],
+            ['tourism', 'tourism_desc'],
+            ['service_24_7', 'service_24_7_desc']
+        ];
+
         const serviceItems = document.querySelectorAll('.service-item');
-        serviceItems[0].querySelector('h4').textContent = translations[language].airport_transfer;
-        serviceItems[0].querySelector('p').textContent = translations[language].airport_transfer_desc;
-        serviceItems[1].querySelector('h4').textContent = translations[language].business;
-        serviceItems[1].querySelector('p').textContent = translations[language].business_desc;
-        serviceItems[2].querySelector('h4').textContent = translations[language].tourism;
-        serviceItems[2].querySelector('p').textContent = translations[language].tourism_desc;
-        serviceItems[3].querySelector('h4').textContent = translations[language].service_24_7;
-        serviceItems[3].querySelector('p').textContent = translations[language].service_24_7_desc;
+        serviceItems.forEach((item, index) => {
+            if (index < serviceTranslations.length) {
+                const [titleKey, descKey] = serviceTranslations[index];
+                const titleElement = item.querySelector('h4');
+                const descElement = item.querySelector('p');
+                
+                if (titleElement) {
+                    titleElement.textContent = translations[language][titleKey];
+                }
+                if (descElement) {
+                    descElement.textContent = translations[language][descKey];
+                }
+            }
+        });
 
         currentLanguage = language;
     }
@@ -45,43 +71,42 @@ document.addEventListener('DOMContentLoaded', function() {
         translatePage(e.target.value);
     });
 
+    // Inicializar la traducción con el idioma por defecto
+    translatePage(currentLanguage);
+
     // Manejo del formulario
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const nombre = document.getElementById('nombre').value;
-        const telefono = document.getElementById('telefono').value;
-        const origen = document.getElementById('origen').value;
-        const destino = document.getElementById('destino').value;
-        const fecha = document.getElementById('fecha').value;
-        
-        const fechaFormateada = new Date(fecha).toLocaleString(currentLanguage + '-' + currentLanguage.toUpperCase(), {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-        });
-        
-        const mensaje = `${translations[currentLanguage].whatsapp_msg}
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            const origen = document.getElementById('origen').value;
+            const destino = document.getElementById('destino').value;
+            const fecha = document.getElementById('fecha').value;
+            
+            const fechaFormateada = new Date(fecha).toLocaleString(currentLanguage + '-' + currentLanguage.toUpperCase(), {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            
+            const mensaje = `${translations[currentLanguage].whatsapp_msg}
 - ${translations[currentLanguage].name.replace(':', '')} ${nombre}
 - ${translations[currentLanguage].phone.replace(':', '')} ${telefono}
 - ${translations[currentLanguage].origin.replace(':', '')} ${origen}
 - ${translations[currentLanguage].destination.replace(':', '')} ${destino}
 - ${translations[currentLanguage].date.replace(':', '')} ${fechaFormateada}`;
-        
-        const mensajeCodificado = encodeURIComponent(mensaje);
-        
-        // Número de WhatsApp del servicio de taxi
-        const numeroWhatsApp = '+34634634774'; // Incluimos el + para el prefijo internacional
-        
-        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
-        
-        window.open(urlWhatsApp, '_blank');
-    });
-
-    // Inicializar la página en español
-    translatePage('es');
+            
+            const mensajeCodificado = encodeURIComponent(mensaje);
+            const numeroWhatsApp = '+34634634774';
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
+            
+            window.open(urlWhatsApp, '_blank');
+        });
+    }
 
     // Animación suave al hacer scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
