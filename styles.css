@@ -98,13 +98,21 @@ nav {
     max-width: 600px;
     margin: 3rem auto;
     padding: 2rem;
+    background-color: #808080;
 }
 
 .form-container {
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
 }
 
 .form-group {
@@ -127,11 +135,18 @@ input {
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s;
+    background-color: #fff;
+    color: #333;
+}
+
+input::placeholder {
+    color: #999;
 }
 
 input:focus {
     outline: none;
     border-color: #fbe609;
+    background-color: #fff;
 }
 
 .whatsapp-button {
@@ -322,4 +337,177 @@ footer {
     .footer-contact p {
         justify-content: center;
     }
+}
+
+/* Estilos para la sección de servicios detallados */
+.services-detail {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.services-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.service-detail-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-detail-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    flex: 0 0 80px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.service-icon i {
+    font-size: 2.5em;
+    color: #007bff;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-content h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-content li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.service-content li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .service-detail-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-icon {
+        margin: 0 0 20px 0;
+    }
+
+    .service-content li {
+        text-align: left;
+    }
+}
+
+/* Estilos para la sección de características adicionales */
+.additional-features {
+    padding: 80px 0;
+    background-color: #808080;
+    color: #fff;
+}
+
+.additional-features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.additional-feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.additional-feature-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.additional-feature-item .feature-icon {
+    flex: 0 0 80px;
+    height: 80px;
+    background-color: #fbe609;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.additional-feature-item .feature-icon i {
+    font-size: 2em;
+    color: #1a1a1a;
+}
+
+.additional-feature-item .feature-content {
+    flex: 1;
+}
+
+.additional-feature-item h4 {
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.additional-feature-item p {
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Responsive design para características adicionales */
+@media (max-width: 768px) {
+    .additional-feature-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .additional-feature-item .feature-icon {
+        margin: 0 auto 20px;
+    }
+
+    .additional-feature-item .feature-content {
+        text-align: center;
+    }
+}
+
+.additional-features .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 50px;
 } 
