@@ -71,7 +71,8 @@ const translations = {
         service_areas_desc: "Servicios de Taxi con posibilidad de desplazamiento en la zona de:",
         discover_region_title: "Descubre Nuestra Región",
         discover_region_desc: "Ven a conocer las zonas turísticas:",
-        waiting_message: "¡Te estaremos esperando!"
+        waiting_message: "¡Te estaremos esperando!",
+        testimonials_title: "Lo que dicen nuestros clientes"
     },
     en: {
         title: "Taxi María Macías - Taxi Service in Galicia | 24/7 Transfers and Routes",
@@ -145,7 +146,8 @@ const translations = {
         service_areas_desc: "Taxi services available in the area of:",
         discover_region_title: "Discover Our Region",
         discover_region_desc: "Come and visit our tourist areas:",
-        waiting_message: "We'll be waiting for you!"
+        waiting_message: "We'll be waiting for you!",
+        testimonials_title: "What our clients say"
     },
     pt: {
         title: "Taxi María Macías - Serviço de Táxi na Galiza | Transferências e Rotas 24/7",
@@ -219,7 +221,8 @@ const translations = {
         service_areas_desc: "Serviços de Táxi disponíveis na área de:",
         discover_region_title: "Descubra Nossa Região",
         discover_region_desc: "Venha conhecer as áreas turísticas:",
-        waiting_message: "Estaremos esperando por você!"
+        waiting_message: "Estaremos esperando por você!",
+        testimonials_title: "O que nossos clientes dizem"
     },
     fr: {
         title: "Taxi María Macías - Service de Taxi en Galice | Transferts et Routes 24/7",
@@ -293,7 +296,8 @@ const translations = {
         service_areas_desc: "Services de Taxi disponibles dans la région de:",
         discover_region_title: "Découvrez Notre Région",
         discover_region_desc: "Venez découvrir nos zones touristiques:",
-        waiting_message: "Nous vous attendons!"
+        waiting_message: "Nous vous attendons!",
+        testimonials_title: "Ce que disent nos clients"
     },
     gl: {
         title: "Taxi María Macías - Servizo de Taxi en Galicia | Traslados e Rutas 24/7",
@@ -367,6 +371,7 @@ const translations = {
         service_areas_desc: "Servizos de Taxi con posibilidade de desprazamento na zona de:",
         discover_region_title: "Descobre a Nosa Rexión",
         discover_region_desc: "Ven coñecer as zonas turísticas:",
-        waiting_message: "Estarémoste esperando!"
+        waiting_message: "Estarémoste esperando!",
+        testimonials_title: "O que din os nosos clientes"
     }
 }; 
