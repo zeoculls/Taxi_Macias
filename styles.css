@@ -425,6 +425,12 @@ footer {
     .footer-contact p {
         justify-content: center;
     }
+    
+    .language-selector select {
+        min-width: 120px;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.4rem 0.4rem 0.6rem;
+    }
 }
 
 /* Estilos para la sección de servicios detallados */
