@@ -375,6 +375,12 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .logo h1 {
         font-size: 1.4rem;
@@ -430,6 +436,10 @@ footer {
         min-width: 120px;
         font-size: 0.8rem;
         padding: 0.4rem 0.4rem 0.4rem 0.6rem;
+    }
+    
+    .footer-title {
+        font-size: 1.3rem;
     }
 }
 
